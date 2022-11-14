@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.game-page {
+    font-family: "Helvetica", cursive;
+    text-align: center;
+}
+
+.status-text {
+    color: black;
+    text-align: center;
+
+}
+
+.status-text.hide {
+    display: none;
+}
+
+.game-board {
+    width: 100vw;
+    height: 70vh;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+   
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+
+
+.post-game {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+
+}
+
+.post-game button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.post-game button:hover {
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    border-color: white;
+
+
+}
+
+.post-game.show {
+    display: flex;
+}
